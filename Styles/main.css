@@ -39,23 +39,7 @@ border-bottom: none;
     color: rgb(30,151,187);
     transition: 0.3s; 
 }
-.container .title{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
-.container .title h1{
-    font-size: 50px;
-}
-.container .title p{
-    font-family:inherit;
-    width: 50%;
-    padding: 40px;
-    text-align: center;
-}
+
  button {
   padding: 15px;
   margin: 40px;
@@ -73,20 +57,29 @@ border-bottom: none;
 .container .cards .card1{
     border-bottom: 1px solid lightgray;
     border-right: 1px solid lightgray;
+    width: 100%;
 }
 .container .cards .card1 .adress{
     font-size: 30px;
+}
+.container .cards .card1 .adress:hover{
+    color: rgb(30,151,187);
+    cursor: pointer;
 }
 .container .cards .card1 .card-img{
     width: 80%;
     margin-top: 30px;
 }
 .container .cards .card1 p{
-   align-self: center;
-    text-align: center;
-    justify-self: center;
     font-size: 20px;
-    margin-top: 20px;
+    width: 80%;
+    color: rgb(114,130,148);
+    margin-left: 40px;
+}
+.container .cards .card1 button:hover{
+    color: rgb(30,151,187);
+    cursor: pointer;
+    border: 1px solid rgb(30,151,187);
 }
 .pagination{
     margin-top: 50px;
