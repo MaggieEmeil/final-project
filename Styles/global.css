@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  background-image: url(../Images/Pasted\ image.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+}
+.fa.menu-bar{
+    visibility: hidden;
+    color: white;
+}
+header {
+    background-color:rgba(0,0,0,0.5);
+    width: 80%;
+    height: 20%;
+    margin: auto;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    text-align: center;
+}
+nav{
+display: flex;
+font-size: 20px;
+gap: 20px;
+}
+.page-name ul{
+    display: flex;
+    list-style: none;
+}
+.page-name a{
+    text-decoration: none;
+    color: aliceblue;
+    padding: 20px;
+  
+}
+.page-name .active a{
+    background-color: white;
+    color: black;
+    text-decoration: none;
+}
+.page-name .active a:hover{
+    color: rgb(30,151,187);
+}
+.container{
+    background-color: white;
+    width: 78%;
+    min-height: 70%;
+    margin: auto;
+}
+.date{
+    padding: 120px;
+ display: flex;
+ justify-content: center;
+ font-size: 20px;
+ gap: 20px;
+}
+.date .line{
+    width: 40%;
+    height: 0.5px;
+    background-color:gray ;
+    align-self: center;
+}
+ .container .title-img{
+    align-items: center;
+    width: 70%;
+ }
+ footer {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: rgb(245,245,245);
+    padding: 60px;
+    margin-top: 60px;
+
+ }
+ footer .form{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows:repeat(9,50px) ;
+    color: rgb(133,139,146);
+
+ }
+ .form .label-name{
+    grid-area: 1/1/2/2;
+    margin-top: 10px;
+ }
+ .form .input-name{
+    grid-area: 2/1/3/2; 
+   
+ }
+ .form .label-email{
+    grid-area:3/1/4/2 ;
+    margin-top: 10px;
+
+ }
+ .form .input-emeil{
+    grid-area: 4/1/5/2;
+  
+ }
+ .form .label-msg{
+    grid-area: 5/1/6/2;
+    margin-top: 10px;
+
+ }
+ .form .input-msg{
+    grid-area: 6/1/9/2;
+ }
+ .form button{
+    grid-area:9/1/10/2 ;
+    padding: 20px;
+    margin: 40px;
+    border: 2px solid black;
+    width: 150px;
+    text-align: center;
+ }
+
+   
+
