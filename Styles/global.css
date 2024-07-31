@@ -15,6 +15,23 @@ body{
     visibility: hidden;
     color: white;
 }
+#header{
+   background-color: transparent;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  height: 300px;
+  align-items: center;
+  margin-top: 70px;
+}
+#header a{
+   border: 5px solid white;
+   font-size: 30px;
+   text-decoration: none;
+   font-weight: bold;
+   color: white;
+   padding: 17px;
+}
 header {
     background-color:rgba(151, 148, 148, 0.3);
     width: 78%;
@@ -31,10 +48,10 @@ nav{
 display: flex;
 font-size: 22px;
 gap: 25px;
-padding-right: 25px;
-}
+padding-right: 25px;}
 nav i:hover{
     color: rgb(30,151,187);
+    cursor: pointer;
 }
 .page-name ul{
     display: flex;
@@ -44,7 +61,6 @@ nav i:hover{
     text-decoration: none;
     color: aliceblue;
     padding: 20px;
-  
 }
 .page-name .active a{
     background-color: white;
@@ -53,6 +69,10 @@ nav i:hover{
 }
 .page-name .active a:hover{
     color: rgb(30,151,187);
+}
+.page-name li a:hover{
+  background-color: rgb(107,96,91);
+  height: 100%;
 }
 .container{
     background-color: white;
@@ -84,6 +104,7 @@ nav i:hover{
 }
 .container .title h1{
     font-size: 50px;
+    margin-top: 70px;
 }
 .container .title p{
     font-family:inherit;
@@ -162,7 +183,7 @@ nav i:hover{
  .example{
     display: grid;
     grid-template-columns: repeat(1,1fr);
-    grid-template-rows: repeat(4,100px);
+    grid-template-rows: repeat(4,25%);
  }
  .example .add-ex{
     color:rgb(133,139,146) ;
@@ -227,19 +248,27 @@ nav i:hover{
  .example .social-ex{
     color:rgb(133,139,146) ;
     display:flex;
+    /* display: grid; */
+    /* grid-template-columns: repeat(2,1fr); */
     justify-content: space-around;
+    align-content: center;
+  
  }
  .example .social-ex .title{
     text-decoration: none;
-    margin-left: 45px;
+    /* margin-left: 45px; */
+    /* grid-area: 1/1/2/2; */
+    grid-area:4/1/5/2 ;
  }
  .example .social-ex .ex{
     color:rgb(133,139,146) ;
-    display: flex;
+    /* display: flex; */
     justify-content:center;
     gap: 10px;
     text-align: center;
     text-decoration: none;
+    grid-area:4/1/5/3 ;
+    align-items: center;
 
  }
  .example .social-ex .ex .fa{
@@ -247,6 +276,7 @@ nav i:hover{
     border-radius:50%;
     border: 1px solid lightgray;
     font-size: 20px;
+
     
  }
  .example .social-ex .ex .fa:hover{
