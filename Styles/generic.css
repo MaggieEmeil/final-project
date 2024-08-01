@@ -7,4 +7,5 @@
 }
 .container .title .paragraph{
     width: 70%;
+    word-break: break-all;
 }

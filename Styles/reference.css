@@ -13,17 +13,6 @@
 .container .parag p{
      color: gray;
 }
-/* .container h4{
-    padding-top: 30px;
-    width: 90%;
-    margin: auto;
-} */
-/* .container h5{
-    padding-top: 30px;
-    width: 90%;
-    margin: auto;
-    padding: 50px;
-} */
 .container .parag mark{
     background-color:rgb(250,250,250) ;
     border: 1px solid rgb(249,249,249);
@@ -47,82 +36,70 @@
 }
 .list h3{
     width: 70%;
+    grid-area: 1/1/2/3;
 }
-/* .container .list-title{
-    width: 90%;
-    margin: auto;
-} */
 .list .unordered{
-   grid-area: 1/1/3/2;
+   grid-area: 2/1/4/2;
    padding-left: 50px; 
 }
 .list .ordered{
-    grid-area: 1/2/3/3;
+    grid-area: 2/2/4/3;
 }
 .list .alternative{
     margin-top: 30px;
-   grid-area: 3/1/5/2;
+   grid-area: 4/1/5/2;
    padding-left: 50px;
 }
 .list .icons{
-    display: flex;
-    gap: 6%;
     padding-top: 5%;
+    grid-area: 4/2/6/3;
 }
 .list .icons .social{
     display:flex;
-    flex-direction: column;
     grid-area: 4/2/5/3;
+    gap: 10%;
+    text-decoration: none;
 }
 .list .icons .social2{
     display:flex;
-    flex-direction: column;
-    grid-area: 3/2/4/3;
+    grid-area: 5/2/6/3;
+    gap: 10%;
+    text-decoration: none;
 }
 .list .icons .social .fa{
     margin-top: 20px;
     color: black;
-    text-decoration: none;
     gap: 20px;
+    padding: 10px;
 }
 .list .icons .social2 .fa{
     margin-top: 20px;
     color: black;
     text-decoration: none;
     gap: 20px;
+    padding: 10px;
+    border-radius:50%;
+    border: 1px solid lightgray;
 }
 .list .icons .social .fa:hover{
     color: #55C0EF;
     transition: .4s;
 }
-/* .container h1{
-  width: 90%;
-  margin: auto;
-  padding: 50px;
-} */
-/* .container h3{
-    width: 90%;
-    margin: auto;
-} */
-.container .ACTIONS{
-    padding: 70px;
-    line-height: 2;
+ .action{
     border-bottom: 1px solid lightgray;
-    width: 90%;
     font-size: 20px;
-    margin: auto;
-    /* display: grid;
-    grid-template-columns: repeat(2,1fr); */
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-left: 10px;
 }
-.ACTIONS .left-action .row1 a{
+.action .left-action .row1 a{
     border: 2px solid black;
     text-decoration: none;
     color: black;
     line-height: 3;
     padding: 10px;
 }
-.ACTIONS .left-action .row1 .black{
+.action .left-action .row1 .black{
     border: 2px solid black;
     text-decoration: none;
     color: white;
@@ -130,38 +107,63 @@
     padding: 10px;
     background-color: black;
 }
-.ACTIONS .right-action .row1 a
+.action .left-action .row2 a{
+    width: 100%;
+    border: 2px solid black;
+    text-decoration: none;
+    color: black;
+    line-height: 3;
+    padding: 10px 40%;
+}
+.action .left-action .row2 .black{
+    border: 2px solid black;
+    text-decoration: none;
+    color: white;
+    line-height: 4;
+    padding: 10px 40%;
+    background-color: black;
+    width: 100%;
+}
+.action .right-action{
+    display: grid;
+    grid-template-rows: repeat(1,1fr);
+}
+.action .right-action .row1 .black{
+    border: 2px solid black;
+    text-decoration: none;
+    color: white;
+    line-height: 4;
+    padding: 10px;
+    background-color: black;
+    align-self: end;
+}
+.action .right-action .row1 a
 { 
     border: 2px solid black;
     text-decoration: none;
     color: black;
     line-height: 3;
-    padding: 10px;
+    padding: 10px ;
+    align-self: end;
 }
-.ACTIONS .right-action .row1 .black{
-    border: 2px solid black;
-    text-decoration: none;
-    color: white;
-    line-height: 4;
-    padding: 10px;
-    background-color: black;
-}
-.ACTIONS .row2 a{
+.action .right-action .row2 a{
     width: 80%;
     border: 2px solid black;
     text-decoration: none;
     color: black;
     line-height: 3;
-    padding: 10px;
+    padding: 10px 40%;
+    align-self: end;
 }
-.ACTIONS .row2 .black{
+.action .right-action .row2 .black{
     border: 2px solid black;
     text-decoration: none;
     color: white;
     line-height: 4;
-    padding: 10px;
+    padding: 10px 40%;
     background-color: black;
     width: 80%;
+    align-self: end;
 }
 .quote p{
 border-left: 2px solid lightgray;
@@ -303,9 +305,10 @@ border-collapse: collapse;
     border: 1px solid rgb(30,151,187);
 
 }
-.picture {
-    width: 90%;
+.picture img{
+    width: 100%;
     margin: auto;
+    padding: 70px;
 }
 .pictures {
     border-bottom: 1px solid lightgray;
